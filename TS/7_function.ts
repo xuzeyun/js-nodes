@@ -33,3 +33,19 @@ function getLength(input: string | number): number{
     return number.toString().length;
   }
 }
+
+// type guard
+function getLength2(input: string | number): number{
+  if(typeof input === 'string'){
+    // 如果参数是string类型
+    return input.length;
+  } else {
+    return input.toString().length;
+  }
+}
+
+
+// 类型推断 type inference
+// 联合类型 union types
+// 类型断言 type ?
+// type guard
